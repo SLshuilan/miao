@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<style>
+
+body {
+  margin: 20px;   /* 边沿 20px */
+}
+
+header {
+  background-color: red;    /* header元素背景颜色为red */
+  min-width: 600px;             /* 最小宽度 600px    */ 
+}
+
+header nav {                  
+  width: 600px;              /* heaeder元素的子元素 nav 有600px的宽度范围 */
+  margin: auto;               /* 居中对其 */
+}
+
+main {
+  padding: 0 10px;           /* 填充 main元素内的文字活动范围 后面越大 范围越小 */
+  max-width: 600px;            /* 最大范围 600px  */
+  margin: auto;             /*      居中对齐      */
+  margin-top: 20px;            /* 与顶部与上一个方块的距离有 20px */
+  margin-bottom: 20px;       /*   底部与下一个方块的距离有 20px  */
+  border: 2px solid;          /*   边框   边框 2px 初始颜色    */
+  box-sizing: border-box;     /*    方块尺寸   */
+}
+
+main div {
+  height: 50px;          /* 高 50px   */
+  background-color: violet;   /*  背景颜色 紫色 */
+}
+main div:hover {       /* :hover 伪类 鼠标悬停时会发生改变    */
+  margin-left: -10px;       /*      鼠标悬停时 左边边沿 -10px   */
+  margin-right: -10px;       /*    鼠标悬停时 右边边沿 -10px   具体缩减或是前进依情况来定 */
+}
+
+main p {                
+  height: 4em;              /* 高  4em  em根据当前文字大小决定自身大小      */
+  overflow: auto;            /*   文字溢出的部分会收录到下面可以c:\Users\shadom\Desktop\block-basic.html用该页面旁边的拉条调整页面进度    居中对齐 */
+}
+
+section {
+  margin: auto;          /* 居中   */
+  border: 50px solid red;    /*  边界 50px 初始色 红色   */
+  border-color: transparent transparent orange  transparent;  /* 边界颜色  透明 透明 橘色 透明  */
+  width: 0;     /*   宽度  0               4个三角形组成一个正方形 顺序是 上 右 下 左  */    
+}
+
+
+
+
+
+
+</style>
+
+
+<body>
+<header>
+  <nav>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nostrum, accusantium pariatur soluta quidem alias vel! Nobis dignissimos modi cupiditate at consequatur ad, aliquam repellendus quae. Libero magni quaerat eaque.</nav>
+</header>
+
+<main>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas earum libero cum quisquam, veniam beatae ipsa sed? Nemo eum nostrum perspiciatis distinctio laboriosam culpa, labore, sapiente, maiores assumenda officia corrupti?
+  </p>
+<div></div>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde velit consequatur repudiandae officiis earum voluptas, modi, amet natus libero, harum ad reiciendis voluptate inventore animi blanditiis assumenda at? Assumenda.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ratione est incidunt voluptatum corrupti hic quae distinctio, aspernatur voluptas recusandae provident repellendus cupiditate ad rem temporibus magni. Eum, reprehenderit nisi!
+  </p>
+</main>
+
+<section></section>
+
+
+
+</body>
+</html>
