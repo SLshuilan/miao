@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<style>
+
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,12,24);
+}
+div {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(16,25,44);
+  margin: top;
+}
+a {
+  text-decoration: none; /* 文字装饰无 */
+}
+
+a:link {
+  color:grey;
+}
+
+a:visited {
+  color:grey;
+}
+
+ul li {
+  color:grey;
+}
+
+ul {
+  position: relative;
+  display: inline-block;
+}
+.a > li {
+  width: 50px;
+  text-align: center;
+  margin: 5px;
+}
+
+.b > li {
+  width: 300px;
+  height: 20px;
+  text-align: left;
+  text-indent: 24px;
+}
+.c > li {
+  width: 300px;
+  height: 20px;
+  text-align: left;
+  text-indent: 24px;
+}
+.d > li {
+  width: 300px;
+  height: 20px;
+  text-align: left;
+  text-indent: 24px;
+}
+.e > li {
+  width: 300px;
+  height: 20px;
+  text-align: left;
+  text-indent: 24px;
+}
+.f > li {
+  width: 300px;
+  height: 20px;
+  text-align: left;
+  text-indent: 24px;
+}
+.g > li {
+  width: 300px;
+  height: 20px;
+  text-align: left;
+  text-indent: 24px;
+}
+.h > li {
+  width: 300px;
+  height: 20px;
+  text-align: left;
+  text-indent: 24px;
+}
+.i > li {
+  width: 300px;
+  height: 20px;
+  text-align: left;
+  text-indent: 24px;
+}
+
+ul li {
+  float: left; /* 向左浮动 */
+  position: relative; /* 相对定位布局 */
+  list-style: none;
+}
+
+ul li a {
+  background-color: rgb(16,25,44);
+  display: block;
+  white-space: nowrap;
+
+}
+
+ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+ul li:hover > ul {
+  display: block;
+}
+
+ul li:hover > a {
+  background-color: blue;
+}
+
+ul li ul li {
+  clear:both;
+  position:relative
+}
+
+ul li ul li a {
+  width: 300px;
+}
+
+ul li ul li ul{
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+
+</style>
+
+
+
+
+<body>
+<div>
+  <ul class="a">
+    <li><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1.doubanio.com%2Fview%2Fnote%2Flarge%2Fpublic%2Fp37673827.jpg&refer=http%3A%2F%2Fimg1.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660615673&t=88a3d739273cc79ee28f0beefb8890d1" width="20px"></li>
+    <li>
+      <a href="">文件</a>
+      <ul class="b">
+        <li><a href="">新建文本文件</a></li>
+        <li><a href="">新建文件</a></li>
+        <li><a href="">新建窗口</a></li>
+        <li><a href="">打开文件</a></li>
+        <li><a herf="">打开文件夹</a></li>
+        <li><a herf="">从文件打开工作区</a></li>
+        <li><a herf="">打开最近的文件</a></li>
+        <li><a herf="">将文件添加到工作区</a></li>
+        <li><a herf="">将工作区另存为</a></li>
+        <li><a herf="">复制工作区</a></li>
+        <li><a herf="">保存</a></li>
+        <li><a herf="">另存为</a></li>
+        <li><a herf="">全部保存</a></li>
+        <li><a herf="">自动保存</a></li>
+        <li><a herf="">首选项</a>
+         <ul>
+           <li><a herf="">设置</a></li>
+           <li><a herf="">联机服务设置</a></li>
+           <li><a herf="">遥测设置</a></li>
+           <li><a herf="">扩展</a></li>
+           <li><a herf="">键盘快捷方式</a></li>
+           <li><a herf="">从 - 中迁移键盘快捷方式</a></li>
+           <li><a herf="">配置用户代码片段</a></li>
+           <li><a herf="">颜色主题</a></li>
+           <li><a herf="">文件图标主题</a></li>
+           <li><a herf="">产品图标主题</a></li>
+           <li><a herf="">打开设置同步</a></li>
+         </ul>
+        </li>
+        <li><a herf="">还原文件</a></li>
+        <li><a herf="">关闭编辑器</a></li>
+        <li><a herf="">关闭窗口</a></li>
+        <li><a herf="">退出</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">编辑</a>
+      <ul class="c">
+        <li><a href="">撤销</a></li>
+        <li><a href="">恢复</a></li>
+        <li><a href="">剪切</a></li>
+        <li><a href="">复制</a></li>
+        <li><a href="">粘贴</a></li>
+        <li><a href="">查找</a></li>
+        <li><a href="">替换</a></li>
+        <li><a href="">在文件中查找</a></li>
+        <li><a href="">在文件中替换</a></li>
+        <li><a href="">切换行注释</a></li>
+        <li><a href="">切换块注释</a></li>
+        <li><a href="">Emmet：展开缩写</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="">选择</a>
+      <ul class="d">
+        <li><a href="">全选</a></li>
+        <li><a href="">扩大选区</a></li>
+        <li><a href="">缩小选区</a></li>
+        <li><a href="">向上复制一行</a></li>
+        <li><a href="">向下复制一行</a></li>
+        <li><a href="">向上移动一行</a></li>
+        <li><a href="">向下移动一行</a></li>
+        <li><a href="">重复选择</a></li>
+        <li><a href="">在上面添加光标</a></li>
+        <li><a href="">在下面添加光标</a></li>
+        <li><a href="">在行尾添加光标</a></li>
+        <li><a href="">添加下一个匹配项</a></li>
+        <li><a href="">添加上一个匹配项</a></li>
+        <li><a href="">选择所有匹配项</a></li>
+        <li><a href="">切换为"ctrl"+单击进行多光标功能</a></li>
+        <li><a href="">列选择模式</a></li>
+      </ul>
+    </li>
+    <li>
+      <a herf="">查看</a>
+      <ul class="e">
+       <li><a href="">命令面板...</a></li>
+       <li><a href="">打开视图...</a></li>
+       <li><a href="">外观</a>
+      <ul>
+        <li><a href="">全屏</a></li>
+        <li><a href="">禅模式</a></li>
+        <li><a href="">居中布局</a></li>
+        <li><a href="">显示菜单栏</a></li>
+        <li><a href="">显示主侧栏(&PP)</a></li>
+        <li><a href="">显示辅助侧栏</a></li>
+        <li><a href="">显示状态栏</a></li>
+        <li><a href="">显示活动栏</a></li>
+        <li><a href="">活动面板</a></li>
+        <li><a href="">向右移动主侧栏</a></li>
+        <li><a href="">面板位置</a>
+        <ul>
+          <li><a href="">底部</a></li>
+          <li><a href="">右</a></li>
+          <li><a href="">左</a></li>
+        </ul>
+        </li>
+        <li><a href="">对齐面板</a>
+        <ul>
+          <li><a href="">居中</a></li>
+          <li><a href="">两端对齐</a></li>
+          <li><a href="">右</a></li>
+          <li><a href="">左</a></li>
+        </ul>
+        </li>
+        <li><a href="">放大</a></li>
+        <li><a href="">缩小</a></li>
+        <li><a href="">重置缩放</a></li>
+      </ul> 
+      </li>
+       <li><a href="">编辑器布局</a>
+      <ul>
+        <li><a href="">向上拆分</a></li>
+        <li><a href="">向下拆分</a></li>
+        <li><a href="">向左拆分</a></li>
+        <li><a href="">向右拆分</a></li>
+        <li><a href="">在组中拆分</a></li>
+        <li><a href="">单列</a></li>
+        <li><a href="">双列</a></li>
+        <li><a href="">三列</a></li>
+        <li><a href="">双行</a></li>
+        <li><a href="">三行</a></li>
+        <li><a href="">2x2网格</a></li>
+        <li><a href="">右侧双行</a></li>
+        <li><a href="">底部双列</a></li>
+        <li><a href="">翻转布局</a></li>
+      </ul>
+      </li>
+       <li><a href="">资源管理器</a></li>
+       <li><a href="">搜索</a></li>
+       <li><a href="">源代码管理</a></li>
+       <li><a href="">运行</a></li>
+       <li><a href="">扩展</a></li>
+       <li><a href="">问题</a></li>
+       <li><a href="">输出</a></li>
+       <li><a href="">调试控制台</a></li>
+       <li><a href="">终端</a></li>
+       <li><a href="">自动换行</a></li>
+       <li><a href="">显示略缩图</a></li>
+       <li><a href="">显示导航痕迹</a></li>
+       <li><a href="">显示空格</a></li>
+       <li><a href="">显示控制字符</a></li>
+      </ul>
+    </li>
+    <li>
+      <a herf="">转到</a>
+        <ul class="f">
+          <li><a href="">返回</a></li>
+          <li><a href="">前进</a></li>
+          <li><a href="">上次编辑位置</a></li>
+          <li><a href="">切换编辑器</a>
+           <ul>
+            <li><a href="">下一个编辑器</a></li>
+            <li><a href="">上一个编辑器</a></li>
+            <li><a href="">下一个使用过的编辑器</a></li>
+            <li><a href="">上一个使用过的编辑器</a></li>
+            <li><a href="">组中的下一个编辑器</a></li>
+            <li><a href="">组中的上一个编辑器</a></li>
+            <li><a href="">组中下一个使用过的编辑器</a></li>
+            <li><a href="">组中上一个使用过的编辑器</a></li>
+           </ul>
+          </li>
+          <li><a href="">切换组</a>
+           <ul>
+            <li><a href="">第一组</a></li>
+            <li><a href="">第二组</a></li>
+            <li><a href="">第三组</a></li>
+            <li><a href="">第四组</a></li>
+            <li><a href="">第五组</a></li>
+            <li><a href="">下一个组</a></li>
+            <li><a href="">上一个组</a></li>
+            <li><a href="">左侧组</a></li>
+            <li><a href="">右侧组</a></li>
+            <li><a href="">上方组</a></li>
+            <li><a href="">下方组</a></li>
+           </ul>
+          </li>
+          <li><a href="">转到文件...</a></li>
+          <li><a href="">转到工作区中的符号...</a></li>
+          <li><a href="">转到编辑器中的符号</a></li>
+          <li><a href="">转到定义</a></li>
+          <li><a href="">转到类型定义</a></li>
+          <li><a href="">转到声明</a></li>
+          <li><a href="">转到实现</a></li>
+          <li><a href="">转到引用</a></li>
+          <li><a href="">转到行/列...</a></li>
+          <li><a href="">转到括号</a></li>
+          <li><a href="">下一个问题</a></li>
+          <li><a href="">上一个问题</a></li>
+          <li><a href="">下一个更改</a></li>
+          <li><a href="">上一个更改</a></li>
+        </ul>
+      </a>
+    </li>
+    <li>
+      <a herf="">运行</a>
+      <ul class="g">
+       <li><a href="">启动调试</a></li>
+       <li><a href="">以非调试模式运行</a></li>
+       <li><a href="">停止调试</a></li>
+       <li><a href="">重启调试</a></li>
+       <li><a href="">打开配置</a></li>
+       <li><a href="">添加配置...</a></li>
+       <li><a href="">单步跳过</a></li>
+       <li><a href="">单步执行</a></li>
+       <li><a href="">单步停止</a></li>
+       <li><a href="">继续</a></li>
+       <li><a href="">切换断点</a></li>
+       <li><a href="">新建断点</a>
+        <ul>
+          <li><a href="">条件断点...</a></li>
+          <li><a href="">内联断点</a></li>
+          <li><a href="">函数断点...</a></li>
+          <li><a href="">记录点...</a></li>
+        </ul>
+       </li>
+       <li><a href="">启动所有断点</a></li>
+       <li><a href="">禁用所有断点</a></li>
+       <li><a href="">删除所有断点</a></li>
+       <li><a href="">安装附加调试器</a></li>
+      </ul>
+    </li>
+    <li>
+      <a herf="">终端</a>
+      <ul class="h">
+       <li><a href="">新建中断</a></li>
+       <li><a href="">拆分中断</a></li>
+       <li><a href="">运行任务...</a></li>
+       <li><a href="">运行生成任务...</a></li>
+       <li><a href="">运行活动文件</a></li>
+       <li><a href="">运行所选文本</a></li>
+       <li><a href="">显示正在运行的任务...</a></li>
+       <li><a href="">重启正在运行的任务...</a></li>
+       <li><a href="">终止任务...</a></li>
+       <li><a href="">配置任务...</a></li>
+       <li><a href="">配置默认生成任务...</a></li>
+      </ul>
+    </li>
+    <li>
+      <a herf="">帮助</a>
+      <ul class="i">
+        <li><a href="">开始</a></li>
+        <li><a href="">显示所有命令</a></li>
+        <li><a href="">编辑器操场</a></li>
+        <li><a href="">文档</a></li>
+        <li><a href="">发行说明</a></li>
+        <li><a href="">键盘快捷方式参考</a></li>
+        <li><a href="">视频教程</a></li>
+        <li><a href="">贴士和技巧</a></li>
+        <li><a href="">Twitter上和我们的互动</a></li>
+        <li><a href="">搜索功能请求</a></li>
+        <li><a href="">使用英文报告问题</a></li>
+        <li><a href="">查看许可证</a></li>
+        <li><a href="">隐私声明</a></li>
+        <li><a href="">切换开发人员工具</a></li>
+        <li><a href="">打开进程管理器</a></li>
+        <li><a href="">检查更新...</a></li>
+        <li><a href="">关于</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
