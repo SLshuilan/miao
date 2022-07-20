@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<style>
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.imgs {
+  position: relative;
+  width: 1200px;
+  display: inline-block;
+  height: 900px;
+  overflow: hidden;
+}
+
+.imgs img {
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  transition: 2s;
+  position: absolute;
+}
+
+section {
+  display:block;
+  border: 20px bolid white;
+  position: relative;
+  margin-left: 360px;
+
+}
+
+section input {
+  position: relative;
+  z-index: 8;
+  display: none;
+}
+.a {
+  position: absolute;
+  bottom: 10px;
+  z-index: 8;
+  font-size:0;
+}
+
+.a label {
+  margin: 3px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 180px;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.a label:hover {
+  background-color: brown;
+}
+
+input:nth-child(1):checked ~ .imgs img:nth-child(1),
+input:nth-child(2):checked ~ .imgs img:nth-child(2),
+input:nth-child(3):checked ~ .imgs img:nth-child(3),
+input:nth-child(4):checked ~ .imgs img:nth-child(4) {
+  left: 0;
+}
+
+input:nth-child(1):check ~ .a label:nth-child(1),
+input:nth-child(2):check ~ .a label:nth-child(2),
+input:nth-child(3):check ~ .a label:nth-child(3),
+input:nth-child(4):check ~ .a label:nth-child(4) {
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<section>
+  <input type="radio" id="a1-1" name="radio1" checked>
+  <input type="radio" id="a1-2" name="radio1">
+  <input type="radio" id="a1-3" name="radio1">
+  <input type="radio" id="a1-4" name="radio1">
+
+  <div class="imgs">
+    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F33d659aa158d05bbe890c0a3f89e470009ce4625.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660911103&t=85d8f10d69ec915df7cb814593c7992d" alt="">
+    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F87960c651ba0892cebf0ed462c31e99d92c8df29.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660911193&t=85c4d49cfe28ea5611d5adc3e5a8f864" alt="">
+    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F80f152797d8bdca783c8dc4ef6b29f62c156f989.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660911483&t=6971a41424438486d600821294d10213" alt="">
+    <img src="https://i0.hdslb.com/bfs/article/ba5eaf5373059fb901ebb67c4ad8a33fb591e266.jpg@942w_1676h_progressive.webp" alt="">
+  </div>
+
+ <div class="a">
+  <label for="a1-1"></label>1
+  <label for="a1-2"></label>2
+  <label for="a1-3"></label>3
+  <label for="a1-4"></label>4
+ </div>
+</section>
+</body>
+</html>
