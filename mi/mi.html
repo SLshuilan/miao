@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>mi</title>
+  <link rel="stylesheet" href="xmy-iconfont.css">
+<style type="text/less">
+* {
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 2px red;
+}
+body {
+  margin: 0;
+  overflow-y: scroll;
+  font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-block {
+  background-color: #333;
+  height: 40px;
+}
+.top-black-inner {
+    width: 1226px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 40px;
+}
+.top-black-inner a {
+  color: #b0b0b0;
+  display: inline-block;
+}
+.top-black-inner a:hover {
+  color: white;
+}
+.top-black-inner sep {
+  margin: 0.3em;
+}
+.right-links {
+  display: flex;
+  position: relative;
+}
+.right-links > * {
+  position: relative;
+  z-index: 888;
+}
+
+.shopping-cart {
+  width: 120px;
+  xdisplay: inline-block;
+  text-align: center;
+  margin-left: 20px;
+  background-color: #424242;
+  position: relative;
+}
+.shopping-cart:hover {
+  background-color: white;
+  color: #ff0067;
+}
+.icon {
+  vertical-align: bottom;
+}
+.shopping-cart:hover + .shopping-list {
+  height: 100px;
+}
+
+
+.shopping-list {
+  transition: 0.6s;
+  overflow: hidden;
+  width: 320px;
+  position:absolute;
+  background-color: #fff;
+  right: 340px;
+  top: 40px;
+  height: 0px;
+  box-shadow: 0 0 8px black;
+  text-align: center;
+  z-index: 999;
+}
+
+.shopping-list:hover {
+  height: 100px;
+  background-color: white;
+}
+
+.top-nav {
+  height:100px;
+  width: 1226px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.product-category {
+  display:  flex;
+}
+.product-category > li {
+  font-size: 14px;
+  padding: 0 10px;
+  height: 100px;
+  line-height: 100px;
+}
+.product-category > li:hover .product-submenu-wrapper {
+  z-index: 888;
+}
+.product-category:hover > li .product-submenu-wrapper {
+  height: 230px;
+}
+
+
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 200px;
+}
+.product-submenu-wrapper {
+  background-color: white;
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  left: 0;
+  width: 100%;
+  transition: 1s;
+}
+.product-submenu-wrapper ul {
+  display: flex;
+  width: 1226px;
+  margin: auto;
+}
+.product-submenu-wrapper ul li {
+  width: calc(1226px / 6);
+  height: 230px;
+}
+
+.search-form {
+  margin-left: auto;
+  display: flex;
+}
+.search-form input {
+  font-size: 16px;
+  width: 245px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-right: none;
+  outline: none;
+}
+.search-form button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  font-size: 2em;
+  position: relative;
+}
+.search-form button .icon {
+  vertical-align: bottom;
+}
+.search-form:hover input {
+  border-color: #b0b0b0;
+}
+.search-form:focus-within input {
+  border-color: #ff6700;
+}
+.search-form:hover button {
+  border-color: #b0b0b0;
+  background-color: #ff6700;
+  cursor: pointer;
+}
+.search-form:focus-within button {
+  border-color: #ff6700;
+}
+.suggestions {
+  position: absolute;
+  display: none;
+  top: 114px;
+  width: 245px;
+}
+.search-form input:focus ~ .suggestions {
+  display: block;
+}
+.fixed-sidebar {
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+}
+.fixed-sidebar ul li {
+  height: 90px;
+}
+.fixed-sidebar .icon {
+  display: block;
+  font-size: 3em;
+}
+@media (max-width: 1460px) {
+  .fixed-sidebar {
+    left: 50%;
+    margin-left: calc(1266px / 2);
+  }
+}
+
+@media (max-width: 1460px) {
+  .fixed-sidebar li {
+    display: none;
+  }
+}
+@media (max-width: 1460px) {
+  .fixed-sidebar .icon {
+    font-size: 2em;
+  }
+}
+
+.hero {
+  height: 460px;
+  width: 1226px;
+  margin: auto;
+  position: relative;
+}
+.product-menu {
+  position: absolute;
+  height: 100%;
+  box-sizing: border-box;
+  width: 235px;
+  padding: 20px 0;
+}
+.product-menu ul > li {
+  height: 42px;
+  line-height: 45px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.product-menu ul > li::after {
+  content: xxx'\E621';
+  font-family: 图标字体;
+  float: right;
+  font-size: x2em;
+}
+
+
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+  <nav class="top-block">
+    <div class="top-black-inner">
+      <div class="left-links">
+        <a href="#">小米官网</a>
+        <span class="sep">|</span>
+        <a href="#">小米商城</a>
+        <span class="sep">|</span>
+        <a href="#">MIUI</a>
+        <span class="sep">|</span>
+        <a href="#">IoT </a>
+        <span class="sep">|</span>
+        <a href="#">云服务 </a>
+        <span class="sep">|</span>
+        <a href="#">天星数科</a>
+        <span class="sep">|</span>
+        <a href="#">有品</a>
+        <span class="sep">|</span>
+        <a href="#">小爱开放平台</a>
+        <span class="sep">|</span>
+        <a href="#">企业团购</a>
+        <span class="sep">|</span>
+        <a href="#">资质证照</a>
+        <span class="sep">|</span>
+        <a href="#">协议规则</a>
+        <span class="sep">|</span>
+        <a href="#">下载app</a>
+        <span class="sep">|</span>
+        <a href="#">Select Location</a>
+      </div>
+      <div class="right-links"></div>
+        <a href="#">登录</a>
+        <span class="sep">|</span>
+        <a href="#">注册</a>
+        <span class="sep">|</span>
+        <a href="#">消息通知</a>
+        <div class="shopping-cart">
+          <a href="">
+            <span class="icon icon-shopping-cart">购物车 (0)</span>
+          </a>
+        </div>
+        <div class="shopping-list">
+          暂无
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="top-nav">
+    <a class="logo" href="/">
+      <img src="C:\Users\shadom\Desktop\miao\mi\小米网站图片素材\www-mi-com-8m4cioe\img\logo-mi2.png" alt="">
+    </a>
+      <ul class="product-category">
+         <li>Xiaomi手机
+          <div class="product-submenu-wrapper">
+            <ul class="product-submenu">
+              <li>aaaa</li>
+              <li>bbbb</li>
+              <li>cccc</li>
+              <li>dddd</li>
+
+            </ul>
+          </div>
+        </li>
+        <li>Redmi手机
+          <div class="product-submenu-wrapper">
+            <ul class="product-submenu">
+              <li>bbbb</li>
+              <li>wwwwww</li>
+              <li>ccccc</li>
+            </ul>
+          <div>
+        </li>
+        <li>电视</li>
+        <li>笔记本</li>
+        <li>平板</li>
+        <li>家电</li>
+        <li>路由器</li>
+        <li>服务中心</li>
+        <li>社区</li>
+      </ul>
+      <form class="search-form" action="">
+        <input type="text">
+        <button><span class="icon icon-search"></span></button>
+        <ul class="suggestions">
+          <li>小米12</li>
+          <li>小米12</li>
+          <li>小米12</li>
+          <li>小米12</li>
+          <li>小米12</li>
+        </ul>
+      </form>
+  </div>
+
+  <div class="hero">
+    <div class="product-menu">
+      <ul>
+        <li>手机</li>
+        <li>电视</li>
+        <li>笔记本 平板</li>
+        <li>出行 穿戴</li>
+        <li>耳机 音箱</li>
+        <li>家电</li>
+        <li>智能 路由器</li>
+        <li>电源 配件</li>
+        <li>健康 儿童</li>
+        <li>生活 箱包</li>
+      </ul>
+    </div>
+    <div class="slider"></div>
+  </div>
+
+  <div class="fixed-sidebar">
+    <ul>
+      <li><span class="icon-shopping-cart"></span>
+        <span class="icon-text">手机app</span>
+        </li>
+      <li><span class="icon-shopping-cart"></span>
+        <span class="icon-text">个人中心</span>
+        </li>
+      <li><span class="icon-shopping-cart"></span>
+        <span class="icon-text">售后服务</span>
+        </li>
+      <li><span class="icon-shopping-cart"></span>
+        <span class="icon-text">人工客服</span>
+        </li>
+      <li><span class="icon-shopping-cart"></span>
+        <span class="icon-text">购物车</span>
+        </li>
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/less@4" > </script>
+</html>

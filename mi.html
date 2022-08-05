@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="my-iconfont.css">
+  <title>index</title>
+</head>
+<style type="text/less">
+* {
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 2px red;
+}
+body {
+  margin: 0;
+  overflow-y: scroll;
+  font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-block {
+  background-color: #333;
+  height: 40px;
+}
+.top-black-inner {
+    width: 1226px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 40px;
+}
+.top-black-inner a {
+  color: #b0b0b0;
+  display: inline-block;
+}
+.top-black-inner a:hover {
+  color: white;
+}
+.top-black-inner sep {
+  margin: 0.3em;
+}
+.right-links a,sep {
+  justify-content: initial;
+}
+.shopping-cart {
+  width: 120px;
+  xdisplay: inline-block;
+  text-align: center;
+  margin-left: 20px;
+  background-color: #424242;
+}
+&:hover .shopping-list{
+  height: 100px;
+}
+.shopping-list {
+  overflow: hidden;
+  transition: 0.6s;
+  position:absolute;
+  width: 320px;
+  right: 0;
+  top: 100%;
+  height: 0;
+  box-shadow:  0 0 8px black;
+}
+
+
+</style>
+<body>
+<div class="page-wrapper">
+  <nav class="top-block">
+    <div class="top-black-inner">
+      <div class="left-links">
+        <a href="#">小米官网</a>
+        <span class="sep">|</span>
+        <a href="#">小米商城</a>
+        <span class="sep">|</span>
+        <a href="#">MIUI</a>
+        <span class="sep">|</span>
+        <a href="#">IoT </a>
+        <span class="sep">|</span>
+        <a href="#">云服务 </a>
+        <span class="sep">|</span>
+        <a href="#">天星数科</a>
+        <span class="sep">|</span>
+        <a href="#">有品</a>
+        <span class="sep">|</span>
+        <a href="#">小爱开放平台</a>
+        <span class="sep">|</span>
+        <a href="#">企业团购</a>
+        <span class="sep">|</span>
+        <a href="#">资质证照</a>
+        <span class="sep">|</span>
+        <a href="#">协议规则</a>
+        <span class="sep">|</span>
+        <a href="#">下载app</a>
+        <span class="sep">|</span>
+        <a href="#">Select Location</a>
+      </div>
+      <div class="right-links"></div>
+        <a href="#">登录</a>
+        <span class="sep">|</span>
+        <a href="#">注册</a>
+        <span class="sep">|</span>
+        <a href="#">消息通知</a>
+        <div class="shopping-cart">
+          <a href="">
+            <span class="icon icon-shopping-cart"></span>购物车 (0)
+          </a>
+          <div class="shopping-list">
+            暂无
+          </div>
+        </div>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/less@4" > </script>
+</html>
