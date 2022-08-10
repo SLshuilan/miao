@@ -21,7 +21,8 @@
   var c = number(prompt())
 
   var d = (a + b) / c
-  console.log(d)
+  var result = d.toFixed(0)
+  console.log(result)
   </script>
 
 <script type="x" id="ch0103/04">
@@ -29,10 +30,10 @@
   var b = number(prompt())
   var c = number(prompt())
 
-  var d = a / b && a % b === c
+  var division = math.floor(a / b)
+  var remainder = a % b
 
-  console.log(d)
-  console.log(c)
+  console.log(division, remainder)
   </script>
 
 <script type="x" id="ch0103/05">
@@ -40,29 +41,30 @@
   var b = number(prompt())
 
   var c = a / b
-  console.log(c)
+  var result = c.toFixed(9)
+  console.log(result)
   </script>
 
 <script type="x" id="ch0103/06">
   var a = number(prompt())
   var b = number(prompt())
 
-  var c = a / b
+  var c = b / a
   let c1 = c.toFixed(3)+"%"
   console.log(c1)
   </script>
 
 <script type="x" id="ch0103/07">
+  var x = number(prompt())
   var a = number(prompt())
   var b = number(prompt())
   var c = number(prompt())
   var d = number(prompt())
-  var x = number(prompt())
   var f = number(prompt())
 
-  var f * (x) = a * (x * x * x) + b (x * x) + c * x + d
+  var result = a * (x * x * x) + b (x * x) + c * x + d
 
-  console.log()
+  console.log(result.toFixed(3))
   </script>
 
 <script type="x" id="ch0103/08">
@@ -72,14 +74,15 @@
  </script>
 <script type="x" id="ch0103/09">
   var a = number(prompt())
+  var pi = 3.14159
 
   var c = 2 * a
   var b = 2 * pi * a
   var d = pi * a * a
 
-  console.log(c)
-  console.log(b)
-  console.log(d)
+  console.log(c.toFixed(4))
+  console.log(b.toFixed(4))
+  console.log(d.toFixed(4))
  </script>
 
 <script type="x" id="ch0103/10">
@@ -87,31 +90,31 @@
   var r2 = number(prompt())
 
   var r = 1 / (1 / r1 + 1 / r2)
-  console.log(r)
+  console.log(r.toFixed(2))
   </script>
 
 <script type="x" id="ch0103/11">
   var a = number(prompt())
   var b = number(prompt())
-  var k = number(prompt())
 
-  var r = a - (k * b) && 0 <= r < b
-  console.log(r)
+  r = a % b
+  console.log(r.toFixed(4))
   </script>
 
 <script type="x" id="ch0103/12">
   var a = number(prompt())
+  var pi = 3.14
 
-  var c = 4 / 3 * pi * (a * a * a)
-  console.log(c)
+  var c = 4 / 3 * pi * a ** 3
+  console.log(c.toFixed(2))
   </script>
 <script type="x" id="ch0103/13">
   var a = number(prompt())
 
-  var b = (a / 100)
-  var c = ((a - b * 100) / 10)
-  var d = a - b * 100 - c * 100
-  var e = (d * 100 + c * 10 + b)
+  var b = a % 10
+  var c = (a - b) / 10 % 10
+  var d = (a - b - c * 10) / 100 % 10
+  var e = (b + c + d)
   console.log(e)
   </script>
 
@@ -119,7 +122,7 @@
   var a = number(prompt())
   var b = number(prompt())
 
-  var c = ((Pi * b * b * a) / 1000) / 20
+  var c = ((pi * b * b * a) / 1000) / 20
   console.log(c)
   </script>
 <script type="x" id="ch0103/15">
@@ -133,10 +136,12 @@
   </script>
 
 <script type="x" id="ch0103/16">
-    var a = number(prompt())
-    var b = number(prompt())
+  var a1 = number(prompt())
+  var b1 = number(prompt())
+  var a2 = number(prompt())
+  var b2 = number(prompt())
 
-    var c = a + b
+    var 1 = Math.pow((a1 - a2)*(a1 - a2) + (b1 - b2) * (b1 - b2))
     console.log(c)
   </script>
 <script type="x" id="ch0103/17">
@@ -168,6 +173,6 @@
 <script type="x" id="ch0103/20">
     var a = number(prompt())
 
-    var c = 2
+    var c = 2 ** a
     console.log(c)
   </script>
