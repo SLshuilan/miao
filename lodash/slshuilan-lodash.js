@@ -1,4 +1,4 @@
-var slshuilan = {
+var SLshuilan = {
   chunk: function (array, size = 1) {
     var res = [];
     var temp = [];
