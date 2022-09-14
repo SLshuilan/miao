@@ -18,3 +18,9 @@ var kuai = {
     return a
   }
 }
+
+var compa = {
+  compact: function (array) {
+
+  }
+}
