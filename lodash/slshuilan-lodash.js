@@ -1,22 +1,22 @@
 var kuai = {
-  chunk: function(array, size = 1) {
-    var a = []
-    var b = []
-    var j = 0
-    for (i = 0; i < array.length; i++) {
-      b.push(array[i])
-      j++
-      if (j >= size) {
-        j = 0
-        a.push(b)
-        b = []
+  chunk: function chunk(array, size = 1) {
+    var res = [];
+    var temp = [];
+    var count = 0;
+
+    for (var i = 0; i < array.length; i++) {
+      temp.push(array[i]);
+      count++;
+
+      if (count == size || i == array.length - 1) {
+        res.push(temp);
+        temp = [];
+        count = 0;
       }
     }
-    if (j != 0) {
-      a.push(b)
-    }
-    return a
-  }
+
+    return res;
+  },
 }
 
 var compa = {
