@@ -1,5 +1,5 @@
 var kuai = {
-  chunk: function chunk(array, size = 1) {
+  chunk: function (array, size = 1) {
     var res = [];
     var temp = [];
     var count = 0;
