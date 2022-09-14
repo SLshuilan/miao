@@ -17,9 +17,7 @@ var slshuilan = {
 
     return res;
   },
-}
 
-var compa = {
   compact: function (array) {
 
   }
