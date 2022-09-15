@@ -1,4 +1,4 @@
-var SLshuilan = {
+var slshuilan = {
   chunk: function (array, size = 1) {
     var res = [];
     var temp = [];
@@ -19,6 +19,7 @@ var SLshuilan = {
   },
 
   compact: function (array) {
-
+    var a = []
+    b = 0
   }
 }
