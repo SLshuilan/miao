@@ -19,7 +19,25 @@ var slshuilan = {
   },
 
   compact: function (array) {
-    var a = []
-    b = 0
-  }
+    let a = []
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] > 0) {
+        a.push(array[i])
+      }
+    }
+    return a
+  },
+
+  difference: function (array, values) {
+    let a = []
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] != values[i]) {
+        a.push(array[i])
+      }
+    }
+  },
+
+  fill: function (array, value) {
+
+  },
 }
