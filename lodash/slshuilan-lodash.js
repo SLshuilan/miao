@@ -38,6 +38,11 @@ var slshuilan = {
   },
 
   fill: function (array, value) {
-
+    let a = []
+    for (var i = 0; i < arrray.length; i++) {
+      if (array[i] > 0) {
+        a.push(array[i])
+      }
+    }
   },
 }
